@@ -14,14 +14,10 @@ www.youtube.com###actions.ytd-watch-metadata ytd-button-renderer .yt-spec-button
 m.youtube.com##ytm-slim-video-action-bar-renderer button [class*="button-text-content"]:not(:has-text(/\d/))
 m.youtube.com##ytm-slim-video-action-bar-renderer ytm-button-renderer div[class$="icon"]:style(margin-right: -6px !important; margin-left: -6px !important;)
 
-! Hide chat window when viewing streams
-www.youtube.com###chat:remove()
 
 ! Hide "Shorts remixing this video" shelf in the description
 www.youtube.com##ytd-reel-shelf-renderer
 
-! Don't enter / exit fullscreen on double-click 
-www.youtube.com##+js(aeld, dblclick)
 
 ! Hide View Products
 www.youtube.com##.ytp-suggested-action-badge-expanded
@@ -107,8 +103,6 @@ youtube.com###donation-shelf
 ! https://www.reddit.com/r/uBlockOrigin/wiki/solutions/youtube/#wiki_shorts
 ! YT Homepage and Subscriptions (Grid View) - Hide the Shorts section
 youtube.com##[is-shorts]
-! YT Menu - Hide the Shorts button
-www.youtube.com###guide [title="Shorts"], .ytd-mini-guide-entry-renderer[title="Shorts"]
 ! YT Search - Hide Shorts
 www.youtube.com##ytd-search ytd-video-renderer:has([overlay-style="SHORTS"])
 ! YT Search, Channels, Subscriptions (List View) and Sidebar/Below Player Recommendations - Hide the Shorts sections
